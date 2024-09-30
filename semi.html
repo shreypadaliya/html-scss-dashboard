@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Language School Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+  <div class="container-fluid" style="background-color: #f3f5f9; ">
+    <div class="row maingridclass">
+      <div class="col-md-3 col-lg-2 perentgrid1" style="background-color: #eaedf5; ">
+        <div
+          style="display: flex;justify-content: space-between; align-items: center;margin-top: 1.0.8rem;margin-bottom: 0.8rem;  ;">
+          <div>
+            <img src="assets/Group 7011.png" alt="">
+          </div>
+          <button id="togglebutton" class="sidebaricon" style="
+                display: flex;
+                background-color: white;
+                height: 30px;
+                width: 30px;
+                justify-content: center;
+                align-items: center;
+              ">
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+        </div>
+        <div id="toggle" >
+          <div  class="sidenav">
+            <div><i class="fas fa-tachometer-alt" ></i></div>
+            <div class="navtag">Dashboard </div>
+          </div>
+          <div  class="sidenav">  
+            <div><i class="fas fa-chalkboard-teacher" ></i></div>
+            <div class="navtag">Induction documents</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-book" style=></i></div>
+            <div class="navtag">My programme</div>
+          </div>
+          <div class="sidenav">
+            <div><i class="fas fa-tachometer-alt"></i></div>
+            <div class="navtag">Learner handbook</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-calendar-alt" ></i></div>
+            <div class="navtag">Calendar event</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-chalkboard-teacher" ></i></div>
+            <div class="navtag">My classes</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-pencil-alt" ></i></div>
+            <div class="navtag">My test</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-school" ></i></div>
+            <div class="navtag">School activities</div>
+          </div>
+          <div class="sidenav">
+            <div><i class="fas fa-home" ></i></div>
+            <div class="navtag">Accommodation</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-link" ></i></div>
+            <div class="navtag">open links</div>
+            <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-file-alt" ></i></div>
+            <div class="navtag">Course report</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-comments" ></i></div>
+            <div class="navtag">Feedback</div>
+            <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-check" ></i></div>
+            <div class="navtag">Grammar test</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-edit" ></i></div>
+            <div class="navtag">Writing Test</div>
+          </div>
+          <div class="sidenav">
+            <div><i class="fas fa-file-invoice"></i></div>
+            <div class="navtag">Entry test</div>
+            <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-volume-up" ></i></div>
+            <div class="navtag">Speaking test</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-star" ></i></div>
+            <div class="navtag">Class Feedback</div>
+          </div>
+          <div class="sidenav">
+            <div><i class="fas fa-ticket-alt"></i></div>
+            <div class="navtag">Student Tickets</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-briefcase"></i></div>
+            <div class="navtag">Jobs Board</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-volume-up"></i></div>
+            <div class="navtag">Speaking test</div>
+          </div>
+          <div  class="sidenav">
+            <div><i class="fas fa-pencil-alt"></i></div>
+            <div class="navtag">My test</div>
+          </div>
+        </div>
+      </div>
+      <!-- Main content -->
+      <div class="col-md-9 col-lg-10 perentgrid2" style=" background-color: #f3f5f9 ;" >
+        <div style=" align-items: center; justify-content: flex-end; display: flex; background-color:  #f3f5f9;">
+          <div class="d-flex align-items-center" style="gap: 30px; ">
+            <button type="button" class="btn btn-sm btn-outline-secondary me-1"
+              style="background-color: #eaedf5;color: #303335;font-size: 14px;font-weight: normal;">
+              Enter to your live class
+            </button>
+
+            <img src="assets/Group 6956.png" alt="Profile" class="profile-img" style="height: 20px; width: 20px" />
+            <img src="assets/Group 6953.png" alt="Profile" class="profile-img" />
+            <div style="font-size: 16px;font-weight: normal;">Andrea paez</div>
+          </div>
+        </div>
+        <div style="background-color: #f3f5f9;  flex-direction: column; padding: 20px 5px 0px 20px;" class="maingrid">
+          <div
+            style="display: flex; flex-direction: column; justify-content: space-between; align-items: stretch; height: 100%; width: 100%;">
+            <div class="row">
+              <div class=" col-md-12 col-lg-6 col-xl-3 box1" style="background-color:#ffffff;height: 40vh; padding: 20px;">
+                <div style="height: auto;">
+                  <h6 class="card-title">Your level</h6>
+                <h5 class="level-title">Elementary</h5>
+                <div class="d-flex justify-content-between level-labels ">
+                  <span>A1</span>
+                  <span>A2</span>
+                  <span>B1</span>
+                  <span>B2</span>
+                  <span>C1</span>
+                  <span>C2</span>
+                </div>
+                <div class="level-progress" >
+                  <div class="progress">
+                    <div class="progress-bar" id="levelProgressBar" role="progressbar" style="width: 16.67%;"></div>
+                  </div>
+                </div>
+                <h6 class="mt-4">Remaining weeks</h6>
+                <h5 class="weeks-title mt-2">10 weeks</h5>
+                <div class="progress my-2">
+                  <div class="progress-bar bg-dark" id="weeksProgressBar" role="progressbar" style="width: 41.67%;">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>0</span>
+                  <span>24</span>
+                </div>
+                <h6 class="mt-4">Course end date</h6>
+                <h5 class="date-title mt-3" >11, Apr, 2019</h5>
+                <div class="progress my-2">
+                  <div class="progress-bar" id="dateProgressBar" role="progressbar" style="width: 41.67%;"></div>
+                </div>
+                </div>
+              </div>
+              <div class=" col-md-12 col-lg-6 col-xl-6 box2" style="height: 40vh;background-color: white;padding: 20px; " >
+                <div class="mb-3" style="height:8%; width: 100%; ">
+                  <h5>My classes</h5>
+                </div>
+                <div style="height:91%; width: 100%; display: flex; align-items: center; flex-direction: column; justify-content:center; background-color: white; gap: 15px;">
+                  <div
+                    style="height:40%; width: 100%; background-color: #f3f5f9; flex-direction: row; align-items: center; justify-content: center; display: flex; padding: 20px 20px 20px 0px;">
+                    <div style="width:20%; height:100%; display: flex; align-items: center; justify-content: center;">
+                      <img src="assets/Group 6916.png" alt="Tom Hudd" style="height:80%; width:80%;">
+                    </div>
+                    <div
+                      style="width:80%; height:100%; display: flex; align-items: center; justify-content: space-between; flex-direction: column;">
+                      <div
+                        style="height:40%; width: 100%; flex-direction: row; align-items: center; justify-content: space-between; display: flex ; padding-top: 10px;">
+                        <div style="width:60%; ">
+                          <h6>Tom Hudd</h6>
+                          <div class="status">
+                            <span>Online</span>
+                            <span class="status-dot"></span>
+                          </div>
+                        </div>
+                        <div style="background-color: #333333; display: flex; align-items: center; justify-content: center; height: 30px;color: white; padding: 0.2rem 0.6rem;">
+                        preintermidiate </div>
+                      </div>
+                      <div
+                        style="height:50%; width: 100%; flex-direction: row; align-items: center; justify-content: center; display: flex;">
+                        <div style="width:25%; height:100%; border-right: 1px solid gray;">
+                          <div class="classesname">Schedule:</div>
+                          <div class="classinfo"> 12:00 - 13:00</div>
+                        </div>
+                        <div style="width:25%; height:100%; border-right: 1px solid gray;padding-left: 5px; ">
+                          <div class="classesname">Campus: </div>
+                          <div class="classinfo">JLT Masaya</div>
+                        </div>
+                        <div style="width:25%; height:100%; border-right: 1px solid gray;padding-left: 5px; ">
+                          <div class="classesname">Floor:</div>
+                          <div class="classinfo"> 36th</div>
+                        </div>
+                        <div style="width:25%; height:100%; padding: 10px;padding-left: 5px;">
+                          <div class="classesname">Classroom:</div>
+                          <div class="classinfo"> 10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="height:40%; width: 100%; background-color: #f3f5f9; flex-direction: row; align-items: center; justify-content: center; display: flex; padding: 20px 20px 20px 0px;">
+                    <div style="width:20%; height:100%; display: flex; align-items: center; justify-content: center;">
+                      <img src="assets/Group 6953.png" alt="Tom Hudd" style="height:80%; width:80%;">
+                    </div>
+                    <div
+                      style="width:80%; height:100%; display: flex; align-items: center; justify-content: space-between; flex-direction: column;">
+                      <div
+                        style="height:40%; width: 100%; flex-direction: row; align-items: center; justify-content: space-between; display: flex ; padding-top: 10px;">
+                        <div style="width:60%; ">
+                          <h6>Tom Hudd</h6>
+                          <div class="status">
+                            <span>Online</span>
+                            <span class="status-dot"></span>
+                          </div>
+                        </div>
+                        <div style="background-color: #333333; display: flex; align-items: center; justify-content: center; height: 30px;color: white; padding: 0.2rem 0.6rem;">
+                        preintermidiate </div>
+                      </div>
+                      <div
+                        style="height:50%; width: 100%; flex-direction: row; align-items: center; justify-content: center; display: flex;">
+                        <div style="width:25%; height:100%; border-right: 1px solid gray;">
+                          <div class="classesname">Schedule:</div>
+                          <div class="classinfo"> 12:00 - 13:00</div>
+                        </div>
+                        <div style="width:25%; height:100%; border-right: 1px solid gray; padding-left: 5px;">
+                          <div class="classesname">Campus: </div>
+                          <div class="classinfo">JLT Masaya</div>
+                        </div>
+                        <div style="width:25%; height:100%; border-right: 1px solid gray; padding-left:5px ;">
+                          <div class="classesname">Floor:</div>
+                          <div class="classinfo"> 36th</div>
+                        </div>
+                        <div style="width:25%; height:100%; padding-left: 5px;">
+                          <div class="classesname">Classroom:</div>
+                          <div class="classinfo"> 10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 col-xl-3 box3" style="height: 40vh;background-color: white;">
+                <div style="height:20%; width: 100%; justify-content: flex-start; align-items: center; display: flex;">
+                  <h5 class="card-title2" style="padding-left:20px">Attendance</h5>
+                </div>
+                <div
+                  style="height:75%; width:100%;  justify-content: flex-start; align-items: center; display: flex; padding-left: 20px; padding-right: 20px; border-radius: 10px;">
+                  <div class="card-body" >
+                    <div class="attendance-container d-flex justify-content-between align-items-center"  >
+                      <div class="attendance-legend">
+                        <div class="legend-item" style="font-size: 15px;">
+                          <div class="legend-color present"></div>
+                          Present
+                        </div>
+                        <div class="legend-item" style="font-size: 15px;">
+                          <div class="legend-color late"></div>
+                          Late
+                        </div>
+                        <div class="legend-item" style="font-size: 15px;">
+                          <div class="legend-color absent"></div>
+                          Absent
+                        </div>
+                        <div class="legend-item" style="font-size: 15px;">
+                          <div class="legend-color holiday"></div>
+                          Holiday
+                        </div>
+                      </div>
+                      <div class="chart-container" style="height: 50%; width: 50%;">
+                        <canvas id="attendanceChart"></canvas>
+                        <div class="chart-center-text">
+                          <span class="present-label">Present</span>
+                          <span class="present-value">93.98%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-12 col-lg-6 col-xl-3 box4" style="height: 40vh;background-color: white;padding: 20px;">
+                <div class="card-body text-center d-flex align-items-center" style="flex-direction: column">
+                  <h5 class="card-title3" style="font-size: 21px;font-weight: normal;line-height: 27px;">Meet Sophia!
+                  </h5>
+                  <p class="card-text mb-12" style="font-size: 21px;font-weight: normal;line-height: 27px;">Your virtual
+                    assistant</p>
+                  <button class="btn shipiabutton"
+                    style="margin-bottom: 27px;background-color: #FF8200;font-size: 14px;font-weight: normal;color: #ffffff;">
+                    Ask any question
+                  </button>
+                  <img src="assets/Group 6934.png" alt="Sophia" class="rounded-circle mb-3"
+                    style="object-fit:contain;margin-inline:auto;" height="60%" width="60%" />
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 col-xl-6 box5" style="height: 40vh; background-color: white;padding: 20px;">
+                <div style="width: 100%; height:fit-content;" class="mb-3 card-title2">Social Activity</div>
+                <div style="display: flex;">
+                  <div style="width: 30%;">
+                    <img src="assets/image.png" alt="Dubai Walk" style="height: 100%;width: 100%;">
+                  </div>
+                  <div
+                    style="display: flex; flex-direction: column;background-color: #f3f5f9; width: 70%; padding: 25px; ">
+                    <h5 style="font-size: 24px; ">Downtown Dubai walk</h5>
+                    <div class="activitygap" style="display: flex; ">
+                      <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <div>Price:</div>
+                        <div style="font-weight: bold;">600 GBP</div>
+                      </div>
+                      <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <div>Date:</div>
+                        <div style="font-weight: bold;">Wed. 30th</div>
+                      </div>
+                      <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <div>Schedule:</div>
+                        <div style="font-weight: bold;">11:00 - 13:00</div>
+                      </div>
+                    </div>
+                    <div class="mt-3"
+                      style="display: flex; align-items: center; gap: 10px;align-items: flex-start;justify-content: space-between;">
+                      <div>
+                        <div style="font-size: 14px; color: #666;">Activity status</div>
+                        <div style="color: green;"> Active ● </div>
+                      </div>
+                      <button
+                        style="background-color: #FF8200; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Register</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 col-xl-3 box6" style="height: 40vh;background-color: white;padding: 20px;">
+                <h5 class="custom-card-title">My test results</h5>
+                <div style="display: flex;justify-content: flex-end;">
+                  <button class="btn btn-light mb-3 custom-dropdown-toggle" type="button" id="customDropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    My test Results
+                  </button>
+                </div>
+                <div class="custom-chart-container">
+                  <div class="custom-dropdown mt-3 text-end">
+                    <ul class="dropdown-menu" aria-labelledby="customDropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Result 1</a></li>
+                      <li><a class="dropdown-item" href="#">Result 2</a></li>
+                      <li><a class="dropdown-item" href="#">Result 3</a></li>
+                    </ul>
+                  </div>
+                  <canvas id="customTestResultsChart"></canvas>
+                </div>
+                <div class="custom-legend mt-2">
+                  <div class="custom-legend-item">
+                    <div class="custom-legend-color custom-legend-student"></div>
+                    <span>Student score</span>
+                  </div>
+                  <div class="custom-legend-item">
+                    <div class="custom-legend-color custom-legend-class"></div>
+                    <span>Class average score</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footermain" style="background-color:#F3F5F9; 
+          ; display: flex; justify-content:space-between;padding: 0px 20px;">
+          <div></div>
+          <div style="font-size: 16px;font-weight: normal;">powered by studybox ai @2024</div>
+          <div>
+            <div style="display: flex; gap: 15px;">
+              <a href="#"
+                style="width: 35px; height: 35px; background-color: #000; border-radius: 50%; position: relative; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                <img src="assets/Path 12944.png" alt="YouTube"
+                  style="max-width: 15px; max-height: 15px; width: 100%;height: auto;">
+              </a>
+              <a href="#"
+                style="width: 35px; height: 35px; background-color: #000; border-radius: 50%; position: relative; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                <img src="assets/Path 12939.png" alt="Facebook"
+                  style="max-width: 15px; max-height: 15px; width: 100%;height: auto;">
+              </a>
+              <a href="#"
+                style="width: 35px; height: 35px; background-color: #000; border-radius: 50%; position: relative; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                <img src="assets/Group 6946.png" alt="Instagram"
+                  style="max-width: 15px; max-height: 15px; width: 100%;height: auto;">
+              </a>
+              <a href="#"
+                style="width: 35px; height: 35px; background-color: #000; border-radius: 50%; position: relative; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                <img src="assets/Path 12943.png" alt="TikTok"
+                  style="max-width: 15px; max-height: 15px; width: 100%;height: auto;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    var toggleButton = document.getElementById('togglebutton');
+        var toggle = document.getElementById('toggle');
+        toggleButton.addEventListener('click', function() {
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                if (toggle.style.display === "block" || toggle.style.display === "") {
+                    toggle.style.display = "none";
+                } else {
+                    toggle.style.display = "block";
+                }
+            }
+        });
+        window.addEventListener('resize', function() {
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                toggle.style.display = "block"; 
+            }
+        });
+  </script>
+  <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "doughnut",
+      data: {
+        labels: ["Present", "Late", "Absent", "Holiday"],
+        datasets: [
+          {
+            data: [93.98, 2, 2, 2],
+            backgroundColor: ["#ffffff", "#ffcc00", "#ff6600", "#ff9900"],
+            borderColor: ["#ffffff", "#ffcc00", "#ff6600", "#ff9900"],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        cutoutPercentage: 50,
+      },
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('customTestResultsChart').getContext('2d');
+      const testResultsChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['0', '22.5', '45', '65.7', '90'],
+          datasets: [
+            {
+              label: 'Student score',
+              data: [0, 30, 20, 80, 40],
+              borderColor: '#a5a5a5',
+              fill: false,
+              tension: 0.4,
+            },
+            {
+              label: 'Class average score',
+              data: [0, 40, 25, 70, 50],
+              borderColor: '#ff9c33',
+              fill: false,
+              tension: 0.4,
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: 22.5
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sidebarToggle = document.getElementById('sidebarToggle');
+      const sidebar = document.querySelector('.sidebar');
+
+      sidebarToggle.addEventListener('click', function () {
+        sidebar.classList.toggle('show');
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('attendanceChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Present', 'Late', 'Absent', 'Holiday'],
+          datasets: [{
+            data: [93.98, 3.01, 2.01, 1],
+            backgroundColor: ['#F5F5F5', '#FFCE56', '#FF6384', '#FFA500'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          cutout: '70%',
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              enabled: false
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
